@@ -32,8 +32,13 @@ function displayData(data) {
 
 function buildMasonry(data){
     console.log(data);
-    const middle = document.querySelector('.middle')
+    const middle = document.querySelector('.middle');
+    const name = document.createElement('h3')
+    name.textContent='Masonry layout'
+    name.style.marginTop='10px';
+
     middle.innerHTML='';
+    middle.append(name);
     middle.innerHTML += `<div id="masonryContainer" class="masonry"></div>`;
     container = document.querySelector("#masonryContainer");
 

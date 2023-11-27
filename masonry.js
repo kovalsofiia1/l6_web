@@ -36,7 +36,12 @@ function generateMasonry() {
 
     const masonryContainer = document.getElementById('masonryContainer');
     masonryContainer.innerHTML = '';
+    const name = document.createElement('h3')
+    name.textContent='Masonry layout'
+    name.style.marginTop='10px';
 
+    const parentNode = masonryContainer.parentNode;
+    parentNode.insertBefore(name,masonryContainer);
     // Створити та додати нові елементи масонрі
     for (let i = 1; i <= elementCount; i++) {
         const content = document.querySelector('#element'+i);
