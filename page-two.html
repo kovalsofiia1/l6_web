@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles-grid.css" />
+    <link rel="stylesheet" href="./css/masonry.css">
+    <title>Page-one-grid</title>
+</head>
+<body>
+<header class="page-header">
+    <h1>It`s Ukraine!</h1>
+</header>
+<aside class="left">
+    <h2>Places in Kyiv</h2>
+
+    <ul>
+        <li><a href="index.html">Maidan Nezalezhnosti</a></li>
+        <li><a href="page-two.html">Khreshchatyk</a></li>
+
+    </ul>
+</aside>
+<main class="page-main">
+    <aside class="right">
+        <p>
+            Khreshchatyk is the main street of Kyiv, Ukraine. The street has a
+            length of 1.2 kilometres (0.75 mi). It stretches from the European
+            Square (northeast) through the Maidan and to Bessarabska Square
+            (southwest) where the Besarabsky Market is located. Along the
+            street are the offices of the Kyiv City Council which contains
+            both the city's council and the state administration, the Main
+            Post Office, the Ministry of Agrarian Policy, the State Committee
+            of Television and Radio Broadcasting, the Central Department Store
+            (TsUM), the Ukrainian House, and others.
+        </p>
+    </aside>
+    <div class="top">
+        <img
+                src="./images/khreshchatyk.jpg"
+                alt="Khreshchatyk"
+                class="picture"
+                usemap="#karta"
+        />
+    </div>
+    <map name="karta">
+        <area
+                shape="rect"
+                coords="0,0,577,278"
+                href="https://en.wikipedia.org/wiki/Khreshchatyk"
+                alt="Khreshchatyk wikipedia"
+        />
+    </map>
+    <div class="middle">
+
+    </div>
+    <div class="bottom">
+        <h2>Khreshchatyk</h2>
+    </div>
+</main>
+<footer class="page-footer">
+    <h3>Glory to Ukraine!</h3>
+</footer>
+<script src="./get-data.js"></script>
+</body>
+</html>

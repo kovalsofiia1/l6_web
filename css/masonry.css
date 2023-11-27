@@ -1,0 +1,68 @@
+.masonry {
+    background: #EEE;
+    max-width: 100%;
+    padding: 0 5%;
+    margin: 5px auto;
+}
+
+/* clearfix */
+.masonry:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.masonry-item {
+    min-width: 20%;
+    max-width:40%;
+    min-height: 50px;
+    float: left;
+    background: #5b8292;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+    margin: 2px 2px;
+}
+
+
+/*.masonry {*/
+/*    background: #DDD;*/
+/*    column-count: 3;*/
+/*    column-gap: 10px;*/
+/*    width:90%;*/
+/*}*/
+
+/*!* clear fix *!*/
+/*.masonry:after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    clear: both;*/
+/*}*/
+
+/*!* ---- .grid-item ---- *!*/
+
+/*!*.masonry-sizer,*!*/
+/*.masonry-item {*/
+/*    width: 30%;*/
+/*}*/
+
+/*.masonry-item {*/
+/*    float: left;*/
+/*    border: 1px blue solid;*/
+/*    padding:4px;*/
+/*    margin:1px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.masonry{*/
+/*    display: grid;*/
+/*    gap: 10px;*/
+/*    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));*/
+/*    grid-template-rows: masonry;*/
+/*}*/
+/*.masonry-item img {*/
+/*    display: block;*/
+/*    max-width: 100%;*/
+/*}*/
