@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Код, який викликається після завершення завантаження DOM
-    console.log('DOM is ready');
     getData();
     setInterval(getData, 60000);
 });
@@ -13,7 +11,6 @@ function getData() {
             retrievedData = JSON.parse(xhr.responseText);
             console.log("Data retrieved successfully:", retrievedData);
 
-            // Do something with the retrieved data
             displayData(retrievedData);
             buildMasonry(retrievedData);
         } else {

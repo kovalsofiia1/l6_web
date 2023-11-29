@@ -1,9 +1,5 @@
-// window.onload = function () {
-//     saveData();
-// };
 
 function saveData() {
-    // Створюємо об'єкт з даними, які потрібно зберегти
     const masonry = document.querySelectorAll('.masonry-item')
     console.log(masonry);
     let dataToSave = {};
@@ -13,7 +9,6 @@ function saveData() {
         dataToSave[id] = element.textContent;
     })
     console.log(dataToSave);
-    // Відправляємо дані на сервер за допомогою AJAX
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "send-data.php", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
